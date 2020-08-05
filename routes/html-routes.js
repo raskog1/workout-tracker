@@ -8,6 +8,4 @@ module.exports = function(app) {
   app.get("/stats", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/stats.html"));
   });
-
-  // Need a path or something to populate last exercise data
 };

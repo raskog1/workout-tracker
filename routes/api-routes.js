@@ -14,6 +14,8 @@ module.exports = function(app) {
 
   app.get("/api/workouts/range", (req, res) => {
     db.find({})
+      .sort({ _id: -1 })
+      .limit(7)
       .then((data) => {
         res.json(data);
       })
