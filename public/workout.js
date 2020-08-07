@@ -1,5 +1,4 @@
-// This should run on upload of js file
-// Populates Last Workout information
+// Populates Last Workout information on front page
 async function initWorkout() {
   const lastWorkout = await API.getLastWorkout();
   console.log("Last workout:", lastWorkout);
